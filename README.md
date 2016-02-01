@@ -1,5 +1,5 @@
-# ethcore-homebrew
-Homebrew tap for ethcore
+# homebrew-ethcore
+Homebrew Tap for ethcore.
 
 ### Installation
 
