@@ -11,7 +11,7 @@ class Parity < Formula
 
   def install
     system "multirust update nightly"
-    system "multirust run nightly cargo build --release"
+    system "multirust run nightly cargo build --release --features rpc"
     bin.install "target/release/parity"
   end
 
