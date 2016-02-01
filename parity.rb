@@ -4,7 +4,7 @@ class Parity < Formula
   version '0.9'
 
   homepage 'https://github.com/ethcore/parity'
-  url 'git@github.com:ethcore/parity.git', :branch => 'master'
+  url 'https://github.com/ethcore/parity', :branch => 'master', :using => :git
 
   depends_on 'multirust' => :build
   depends_on 'rocksdb'
