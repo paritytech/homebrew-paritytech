@@ -12,6 +12,7 @@ class Parity < Formula
   def install
     system "multirust update nightly"
     system "multirust run nightly cargo install --features rpc"
+    bin.install "~/.multirust/toolchains/nightly/cargo/bin/parity"
   end
 
   def plist; <<-EOS.undent
