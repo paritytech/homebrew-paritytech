@@ -1,7 +1,7 @@
 require 'formula'
 
 class Parity < Formula
-  version '0.9'
+  version '0.9.1'
 
   homepage 'https://github.com/ethcore/parity'
   url 'https://github.com/ethcore/parity.git', :branch => 'beta', :using => :git
