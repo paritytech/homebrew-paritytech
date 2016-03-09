@@ -22,8 +22,8 @@ class Parity < Formula
 
   def install
     if build.include? "master"
-      system "multirust update beta"
-      system "multirust run beta cargo build --release"
+      system "multirust update stable"
+      system "multirust run stable cargo build --release"
     elsif build.include? "beta"
       system "multirust update nightly-2016-02-14"
       system "multirust run nightly-2016-02-14 cargo build --release"
