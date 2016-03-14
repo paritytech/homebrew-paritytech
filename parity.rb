@@ -1,15 +1,16 @@
 require 'formula'
 
 class Parity < Formula
-  version '0.9.1'
-
   homepage 'https://github.com/ethcore/parity'
 
   if build.include? "master"
+    version '1.1.0'
     url 'https://github.com/ethcore/parity.git', :branch => 'master', :using => :git
   elsif build.include? "beta"
+    version '1.0.0'
     url 'https://github.com/ethcore/parity.git', :branch => 'beta', :using => :git
   else
+    version '1.0.0'
     url 'https://github.com/ethcore/parity.git', :branch => 'beta', :using => :git
   end
 
@@ -21,16 +22,8 @@ class Parity < Formula
   option 'stable', 'Install latest stable (default).'
 
   def install
-    if build.include? "master"
-      system "multirust update stable"
-      system "multirust run stable cargo build --release"
-    elsif build.include? "beta"
-      system "multirust update nightly-2016-02-14"
-      system "multirust run nightly-2016-02-14 cargo build --release"
-    else
-      system "multirust update nightly-2016-02-14"
-      system "multirust run nightly-2016-02-14 cargo build --release"
-    end
+    system "multirust update stable"
+    system "multirust run stable cargo build --release"
     bin.install "target/release/parity"
   end
 
