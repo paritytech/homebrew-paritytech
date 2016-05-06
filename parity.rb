@@ -4,13 +4,13 @@ class Parity < Formula
   homepage 'https://github.com/ethcore/parity'
 
   if build.include? "master"
-    version '1.1.0'
+    version '1.2.0'
     url 'https://github.com/ethcore/parity.git', :branch => 'master', :using => :git
   elsif build.include? "beta"
-    version '1.0.1'
+    version '1.1.0'
     url 'https://github.com/ethcore/parity.git', :branch => 'beta', :using => :git
   else
-    version '1.0.1'
+    version '1.1.0'
     url 'https://github.com/ethcore/parity.git', :branch => 'beta', :using => :git
   end
 
