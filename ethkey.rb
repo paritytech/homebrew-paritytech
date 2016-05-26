@@ -1,7 +1,7 @@
 require 'formula'
 
 class Ethkey < Formula
-  homepage 'https://github.com/ethcore/parity'
+  homepage 'https://github.com/ethcore/ethkey'
 
   version '0.1.0'
   url 'https://github.com/ethcore/ethkey.git', :branch => 'master', :using => :git
