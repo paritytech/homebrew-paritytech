@@ -3,7 +3,7 @@ require 'formula'
 class Ethkey < Formula
   homepage 'https://github.com/ethcore/ethkey'
 
-  version '0.1.0'
+  version '0.2.0'
   url 'https://github.com/ethcore/ethkey.git', :branch => 'master', :using => :git
 
   depends_on 'multirust' => :build
