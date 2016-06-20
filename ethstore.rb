@@ -1,16 +1,16 @@
 require 'formula'
 
-class Ethkey < Formula
+class Ethstore < Formula
   homepage 'https://github.com/ethcore/parity'
 
-  version '0.2.0'
+  version '0.1.0'
   url 'https://github.com/ethcore/parity.git', :branch => 'master', :using => :git
 
   depends_on 'multirust' => :build
 
   def install
     system "multirust update stable"
-    system "multirust run stable cargo build --release -p ethkey --features='ethcore/ethstore/ethkey/cli'"
-    bin.install "target/release/deps/ethkey"
+    system "multirust run stable cargo build --release -p ethstore --features='ethcore/ethstore/cli'"
+    bin.install "target/release/deps/ethstore"
   end
 end
