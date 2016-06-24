@@ -6,19 +6,19 @@ class Parity < Formula
   if build.include? "master"
     version '1.3.0'
     url 'https://github.com/ethcore/parity.git', :branch => 'master', :using => :git
-  elsif build.include? "beta"
-    version '1.2.0'
-    url 'https://github.com/ethcore/parity.git', :branch => 'beta', :using => :git
-  else
+  elsif build.include? "stable"
     version '1.1.0'
     url 'https://github.com/ethcore/parity.git', :branch => 'stable', :using => :git
+  else
+    version '1.2.0'
+    url 'https://github.com/ethcore/parity.git', :branch => 'beta', :using => :git
   end
 
   depends_on 'multirust' => :build
   depends_on 'rocksdb'
 
   option 'master', 'Build and install nightly version.'
-  option 'beta', 'Build and install latest beta.'
+  option 'beta', 'Build and install latest beta (default).'
   option 'stable', 'Install latest stable (default).'
 
   def install
