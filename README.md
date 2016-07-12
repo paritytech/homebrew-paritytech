@@ -3,7 +3,7 @@ Homebrew Tap for ethcore.
 
 ### Getting Homebrew
 
-Homebrew is the missing package manager for OSX. You can find installation instructions at www.brew.sh, alternatively open your terminal and type in:
+Homebrew is the missing package manager for OSX. You can find installation instructions at <www.brew.sh>. Alternatively open your terminal and type in:
 
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
