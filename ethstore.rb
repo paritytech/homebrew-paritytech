@@ -10,7 +10,7 @@ class Ethstore < Formula
 
   def install
     system "multirust update stable"
-    system "multirust run stable cargo build --release -p ethstore --features='ethcore/ethstore/cli'"
+    system "multirust run stable cargo build --release -p ethstore --features='ethstore-cli'"
     bin.install "target/release/deps/ethstore"
   end
 end
