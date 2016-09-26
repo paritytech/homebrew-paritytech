@@ -17,7 +17,7 @@ class Parity < Formula
   depends_on 'multirust' => :build
 
   option 'master', 'Build and install nightly version.'
-  option 'beta', 'Build and install latest beta (default).'
+  option 'beta', 'Build and install latest beta. '
   option 'stable', 'Install latest stable (default).'
 
   def install
