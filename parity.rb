@@ -7,7 +7,7 @@ class Parity < Formula
     version '1.4.0'
     url 'https://github.com/ethcore/parity.git', :branch => 'master', :using => :git
   elsif build.include? "beta"
-    version '1.3.0'
+    version '1.3.1'
     url 'https://github.com/ethcore/parity.git', :branch => 'beta', :using => :git
   else
     version '1.2.4'
