@@ -41,6 +41,7 @@ class Parity < Formula
         <integer>300</integer>
         <key>ProgramArguments</key>
         <array>
+          <string>#{prefix}/bin/parity</string>
         </array>
         <key>WorkingDirectory</key>
         <string>#{HOMEBREW_PREFIX}</string>
