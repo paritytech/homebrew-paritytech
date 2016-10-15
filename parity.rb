@@ -7,8 +7,8 @@ class Parity < Formula
     version '1.4.0'
     url 'https://github.com/ethcore/parity.git', :branch => 'master', :using => :git
   elsif build.include? "beta"
-    version '1.3.7'
-    url 'https://github.com/ethcore/parity.git', :branch => 'beta', :using => :git
+    version '1.3.8'
+    url 'https://github.com/ethcore/parity.git', :tag => 'v1.3.8', :using => :git
   else
     version '1.2.4'
     url 'https://github.com/ethcore/parity.git', :branch => 'stable', :using => :git
