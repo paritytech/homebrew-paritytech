@@ -25,7 +25,7 @@ If you wish to download and install the latest **stable** version of Parity (cur
 brew install parity
 ```
 
-If you would prefer to use the latest **beta** release (currently 1.3.2), open your terminal and enter:
+If you would prefer to use the latest **beta** release (currently 1.3.8), open your terminal and enter:
 
 ```
 brew install parity --beta
@@ -40,7 +40,7 @@ brew install parity --master
 In order to update Parity to the latest version use:
 
 ```
-brew update && brew upgrade
+brew update && brew upgrade parity
 ```
 
 and
