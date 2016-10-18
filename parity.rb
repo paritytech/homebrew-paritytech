@@ -20,6 +20,8 @@ class Parity < Formula
   option 'beta', 'Build and install latest beta. '
   option 'stable', 'Install latest stable (default).'
 
+  option 'geth-compatible', 'Run service with --geth option.'
+
   def install
     system "multirust update stable"
     system "multirust run stable cargo build --release"
@@ -42,6 +44,7 @@ class Parity < Formula
         <key>ProgramArguments</key>
         <array>
           <string>#{prefix}/bin/parity</string>
+          #{'<string>--geth</string>' if build.include? 'geth-compatible'}
         </array>
         <key>WorkingDirectory</key>
         <string>#{HOMEBREW_PREFIX}</string>
