@@ -40,7 +40,7 @@ brew install parity --master
 In order to update Parity to the latest version use:
 
 ```
-brew update && brew upgrade
+brew update && brew upgrade parity
 ```
 
 and
