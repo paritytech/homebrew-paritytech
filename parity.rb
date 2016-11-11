@@ -10,8 +10,8 @@ class Parity < Formula
     version '1.4.2'
     url 'https://github.com/ethcore/parity.git', :tag => 'v1.4.2', :using => :git
   else
-    version '1.3.10'
-    url 'https://github.com/ethcore/parity.git', :tag => 'v1.3.10', :using => :git
+    version '1.3.11'
+    url 'https://github.com/ethcore/parity.git', :tag => 'v1.3.11', :using => :git
   end
 
   depends_on 'multirust' => :build
