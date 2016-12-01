@@ -19,19 +19,19 @@ brew tap ethcore/ethcore
 
 ### Installing Parity
 
-If you wish to download and install the latest **stable** version of Parity (currently 1.2.4), open your terminal and enter:
+If you wish to download and install the latest **stable** version of Parity, open your terminal and enter:
 
 ```
 brew install parity
 ```
 
-If you would prefer to use the latest **beta** release (currently 1.3.8), open your terminal and enter:
+If you would prefer to use the latest **beta** release, open your terminal and enter:
 
 ```
 brew install parity --beta
 ```
 
-If you would prefer to use the latest **develop** release (currently 1.4.0), open your terminal and enter:
+If you would prefer to use the latest **develop** release, open your terminal and enter:
 
 ```
 brew install parity --master
