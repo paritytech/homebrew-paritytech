@@ -24,7 +24,7 @@ class Parity < Formula
 
   def install
     system "multirust update stable"
-    system "multirust run stable cargo build --release"
+    system "multirust run stable cargo build --release --features final"
     bin.install "target/release/parity"
   end
 
