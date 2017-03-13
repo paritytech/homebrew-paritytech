@@ -4,14 +4,14 @@ class Parity < Formula
   homepage 'https://github.com/ethcore/parity'
 
   if build.include? "master"
-    version '1.6.0'
+    version '1.7.0'
     url 'https://github.com/ethcore/parity.git', :branch => 'master', :using => :git
-  elsif build.include? "beta"
-    version '1.5.7'
-    url 'https://github.com/ethcore/parity.git', :tag => 'v1.5.7', :using => :git
+  elsif build.include? "stable"
+    version '1.5.9'
+    url 'https://github.com/ethcore/parity.git', :tag => 'v1.5.9', :using => :git
   else
-    version '1.4.12'
-    url 'https://github.com/ethcore/parity.git', :tag => 'v1.4.12', :using => :git
+    version '1.6.2'
+    url 'https://github.com/ethcore/parity.git', :tag => 'v1.6.2', :using => :git
   end
 
   depends_on 'multirust' => :build
