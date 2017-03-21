@@ -23,10 +23,11 @@ class Parity < Formula
   option 'geth-compatible', 'Run service with --geth option.'
 
   def install
-    system "multirust update stable"
-    if build.include? "master" or build.include? "beta"
-      system "multirust run stable cargo build --release --features final"
+    if build.include? "stable" or build.include? "beta"
+      system "multirust update 1.15.1"
+      system "multirust run 1.15.1 cargo build --release --features final"
     else
+      system "multirust update stable"
       system "multirust run stable cargo build --release"
     end
     bin.install "target/release/parity"
