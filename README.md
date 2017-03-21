@@ -14,7 +14,7 @@ Homebrew is the missing package manager for OSX. You can find installation instr
 Open your terminal and enter:
 
 ```
-brew tap ethcore/ethcore
+brew tap paritytech/paritytech
 ```
 
 ### Installing Parity
