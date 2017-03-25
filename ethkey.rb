@@ -11,6 +11,6 @@ class Ethkey < Formula
   def install
     system "multirust update stable"
     system "multirust run stable cargo build --release -p ethkey --features='ethkey-cli'"
-    bin.install "target/release/deps/ethkey"
+    bin.install "target/release/ethkey"
   end
 end

@@ -1,5 +1,5 @@
-# homebrew-ethcore
-Homebrew Tap for ethcore.
+# homebrew-paritytech
+Homebrew Tap for paritytech.
 
 ### Getting Homebrew
 
