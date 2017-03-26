@@ -5,32 +5,31 @@ class Parity < Formula
 
   if build.include? "master"
     version '1.7.0'
-    url 'https://github.com/ethcore/parity.git', :branch => 'master', :using => :git
+    url 'http://d1h4xl4cr1h0mo.cloudfront.net/master/x86_64-apple-darwin/parity'
   elsif build.include? "stable"
     version '1.5.11'
-    url 'https://github.com/ethcore/parity.git', :tag => 'v1.5.11', :using => :git
+    url 'http://d1h4xl4cr1h0mo.cloudfront.net/v1.5.11/x86_64-apple-darwin/parity'
+    sha256 "ce38e39f55f973894f97ed3c70a20a058f036e3ba05463dde61bf98a87edede7"
   else
     version '1.6.4'
-    url 'https://github.com/ethcore/parity.git', :tag => 'v1.6.4', :using => :git
+    url 'http://d1h4xl4cr1h0mo.cloudfront.net/v1.6.4/x86_64-apple-darwin/parity'
+    sha256 "6700743239f6aa4b2b7a2d8b9a98ddab22f7362be827c4a54cccd65e74bcd692"
   end
 
-  depends_on 'multirust' => :build
-
-  option 'master', 'Build and install nightly version.'
-  option 'beta', 'Build and install latest beta. '
-  option 'stable', 'Install latest stable (default).'
+  option 'master', 'Install nightly version.'
+  option 'beta', 'Install latest beta (default). '
+  option 'stable', 'Install latest stable'
 
   option 'geth-compatible', 'Run service with --geth option.'
 
+  bottle :unneeded
+
   def install
-    if build.include? "stable" or build.include? "beta"
-      system "multirust update stable"
-      system "multirust run stable cargo build --release --features final"
-    else
-      system "multirust update stable"
-      system "multirust run stable cargo build --release"
-    end
-    bin.install "target/release/parity"
+    bin.install "parity"
+  end
+
+  test do
+    system "#{bin}/delta", "--version"
   end
 
   def plist; <<-EOS.undent
