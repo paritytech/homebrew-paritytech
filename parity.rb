@@ -7,12 +7,12 @@ class Parity < Formula
     version '1.7.0'
     url 'http://d1h4xl4cr1h0mo.cloudfront.net/master/x86_64-apple-darwin/parity'
   elsif build.include? "stable"
-    version '1.5.11'
-    url 'http://d1h4xl4cr1h0mo.cloudfront.net/v1.5.11/x86_64-apple-darwin/parity'
+    version '1.5.12'
+    url 'http://d1h4xl4cr1h0mo.cloudfront.net/v1.5.12/x86_64-apple-darwin/parity'
     sha256 "ce38e39f55f973894f97ed3c70a20a058f036e3ba05463dde61bf98a87edede7"
   else
-    version '1.6.4'
-    url 'http://d1h4xl4cr1h0mo.cloudfront.net/v1.6.4/x86_64-apple-darwin/parity'
+    version '1.6.5'
+    url 'http://d1h4xl4cr1h0mo.cloudfront.net/v1.6.5/x86_64-apple-darwin/parity'
     sha256 "6700743239f6aa4b2b7a2d8b9a98ddab22f7362be827c4a54cccd65e74bcd692"
   end
 
