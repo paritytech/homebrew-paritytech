@@ -9,11 +9,11 @@ class Parity < Formula
   elsif build.include? "stable"
     version '1.5.12'
     url 'http://d1h4xl4cr1h0mo.cloudfront.net/v1.5.12/x86_64-apple-darwin/parity'
-    sha256 "ce38e39f55f973894f97ed3c70a20a058f036e3ba05463dde61bf98a87edede7"
+    sha256 "4f8ca0bf85ecb76f5caaec33e15bdaeda592f2f544624422ad5418d5a5ea7a0b"
   else
     version '1.6.5'
     url 'http://d1h4xl4cr1h0mo.cloudfront.net/v1.6.5/x86_64-apple-darwin/parity'
-    sha256 "6700743239f6aa4b2b7a2d8b9a98ddab22f7362be827c4a54cccd65e74bcd692"
+    sha256 "65b32bd3178f442ddd9e2eb24d04ba16a6dad933f46ad7fec215900fa9358cfb"
   end
 
   option 'master', 'Install nightly version.'
