@@ -11,9 +11,9 @@ class Parity < Formula
     url 'http://d1h4xl4cr1h0mo.cloudfront.net/v1.5.12/x86_64-apple-darwin/parity'
     sha256 "4f8ca0bf85ecb76f5caaec33e15bdaeda592f2f544624422ad5418d5a5ea7a0b"
   else
-    version '1.6.7'
-    url 'http://d1h4xl4cr1h0mo.cloudfront.net/v1.6.7/x86_64-apple-darwin/parity'
-    sha256 "c85cb100abf18aaea6a3c30b863033e905a545fcdd35b455acd4f098e8d8f7d0"
+    version '1.6.8'
+    url 'http://d1h4xl4cr1h0mo.cloudfront.net/v1.6.8/x86_64-apple-darwin/parity'
+    sha256 "56f467ce6bf5082a37363c17c8f26214bf5d0e0209ef342f64ef12b57c7fa778"
   end
 
   option 'master', 'Install nightly version.'
