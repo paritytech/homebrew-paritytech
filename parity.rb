@@ -1,7 +1,7 @@
 require 'formula'
 
 class Parity < Formula
-  homepage 'https://github.com/ethcore/parity'
+  homepage 'https://github.com/paritytech/parity'
 
   if build.include? "master"
     version '1.7.0'

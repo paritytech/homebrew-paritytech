@@ -1,10 +1,10 @@
 require 'formula'
 
 class Ethabi < Formula
-  homepage 'https://github.com/ethcore/ethabi'
+  homepage 'https://github.com/paritytech/ethabi'
 
   version '1.1.0'
-  url 'https://github.com/ethcore/ethabi.git', :branch => 'master', :using => :git
+  url 'https://github.com/paritytech/ethabi.git', :branch => 'master', :using => :git
 
   depends_on 'multirust' => :build
 
