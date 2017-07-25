@@ -4,16 +4,16 @@ class Parity < Formula
   homepage 'https://github.com/paritytech/parity'
 
   if build.include? "master"
-    version '1.7.0'
+    version '1.8.0'
     url 'http://d1h4xl4cr1h0mo.cloudfront.net/master/x86_64-apple-darwin/parity'
   elsif build.include? "stable"
-    version '1.5.12'
-    url 'http://d1h4xl4cr1h0mo.cloudfront.net/v1.5.12/x86_64-apple-darwin/parity'
-    sha256 "4f8ca0bf85ecb76f5caaec33e15bdaeda592f2f544624422ad5418d5a5ea7a0b"
+    version '1.6.10'
+    url 'http://d1h4xl4cr1h0mo.cloudfront.net/v1.6.10/x86_64-apple-darwin/parity'
+    sha256 "a65c24d9d1746b4c12c32db36e01839e903ec712731670ad856c6046675ce49c"
   else
-    version '1.6.8'
-    url 'http://d1h4xl4cr1h0mo.cloudfront.net/v1.6.8/x86_64-apple-darwin/parity'
-    sha256 "56f467ce6bf5082a37363c17c8f26214bf5d0e0209ef342f64ef12b57c7fa778"
+    version '1.6.10'
+    url 'http://d1h4xl4cr1h0mo.cloudfront.net/v1.6.10/x86_64-apple-darwin/parity'
+    sha256 "a65c24d9d1746b4c12c32db36e01839e903ec712731670ad856c6046675ce49c"
   end
 
   option 'master', 'Install nightly version.'
