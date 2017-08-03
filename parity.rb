@@ -5,7 +5,7 @@ class Parity < Formula
 
   if build.include? "master"
     version '1.8.0'
-    url 'http://d1h4xl4cr1h0mo.cloudfront.net/master/x86_64-apple-darwin/parity'
+    url 'http://d1h4xl4cr1h0mo.cloudfront.net/nightly/x86_64-apple-darwin/parity'
   elsif build.include? "stable"
     version '1.6.10'
     url 'http://d1h4xl4cr1h0mo.cloudfront.net/v1.6.10/x86_64-apple-darwin/parity'
