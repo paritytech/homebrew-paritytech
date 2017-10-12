@@ -12,7 +12,7 @@ class Parity < Formula
     sha256 "a65c24d9d1746b4c12c32db36e01839e903ec712731670ad856c6046675ce49c"
   else
     version '1.7.4'
-    url 'http://d1h4xl4cr1h0mo.cloudfront.net/v1.7.3/x86_64-apple-darwin/parity'
+    url 'http://d1h4xl4cr1h0mo.cloudfront.net/v1.7.4/x86_64-apple-darwin/parity'
     sha256 "d06e3a6f333bb3e41d8d31793ea72c7bd22dc73ee79a112c16604b479d9ea21a"
   end
 
