@@ -6,7 +6,7 @@ class Parity < Formula
   if build.include? "master"
     version '1.9.0'
     url 'http://d1h4xl4cr1h0mo.cloudfront.net/nightly/x86_64-apple-darwin/parity'
-  elsif build.include? "stable"
+  elsif build.include? "beta"
     version '1.8.0'
     url 'http://d1h4xl4cr1h0mo.cloudfront.net/v1.8.0/x86_64-apple-darwin/parity'
     sha256 "0f2bec7fef5ba5ff52a77b24edc891c810535c6152d7e6a4638f14237cf1cb01"
