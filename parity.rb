@@ -11,7 +11,7 @@ class Parity < Formula
     url 'http://d1h4xl4cr1h0mo.cloudfront.net/v1.8.5/x86_64-apple-darwin/parity'
     sha256 "93285a110b4d89986345b0b125e8fb17dfd9d42d849610948e9a51b9d5b77eaa"
   elsif build.include? "stable"
-    version '1.7.10'
+    version '1.7.11'
     url 'http://d1h4xl4cr1h0mo.cloudfront.net/v1.7.11/x86_64-apple-darwin/parity'
     sha256 "b2d156510cdb2223b4c69910bf41062622da7caeed03429a2e1071907977892e"
   else
