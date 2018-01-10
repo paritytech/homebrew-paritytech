@@ -5,18 +5,18 @@ class Parity < Formula
 
   if build.include? "master" or build.include? "nightly"
     version '1.9.0'
-    url 'http://d1h4xl4cr1h0mo.cloudfront.net/nightly/x86_64-apple-darwin/parity'
+    url 'https://d1h4xl4cr1h0mo.cloudfront.net/nightly/x86_64-apple-darwin/parity'
   elsif build.include? "beta" or build.include? "latest"
     version '1.8.6'
-    url 'http://d1h4xl4cr1h0mo.cloudfront.net/v1.8.6/x86_64-apple-darwin/parity'
+    url 'https://d1h4xl4cr1h0mo.cloudfront.net/v1.8.6/x86_64-apple-darwin/parity'
     sha256 "2285621c00cdd7b04a9b6641b1feb0764f8c1ca04eff820b16c256839a49c659"
   elsif build.include? "stable"
     version '1.7.12'
-    url 'http://d1h4xl4cr1h0mo.cloudfront.net/v1.7.12/x86_64-apple-darwin/parity'
+    url 'https://d1h4xl4cr1h0mo.cloudfront.net/v1.7.12/x86_64-apple-darwin/parity'
     sha256 "415b8c26a5924890b1ec05ccd2e65c9b7535be03dfd859913448fabe5501a4fe"
   else
     version '1.8.6'
-    url 'http://d1h4xl4cr1h0mo.cloudfront.net/v1.8.6/x86_64-apple-darwin/parity'
+    url 'https://d1h4xl4cr1h0mo.cloudfront.net/v1.8.6/x86_64-apple-darwin/parity'
     sha256 "2285621c00cdd7b04a9b6641b1feb0764f8c1ca04eff820b16c256839a49c659"
   end
 
