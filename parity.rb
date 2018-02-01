@@ -7,17 +7,17 @@ class Parity < Formula
     version '1.10.0'
     url 'https://d1h4xl4cr1h0mo.cloudfront.net/nightly/x86_64-apple-darwin/parity'
   elsif build.include? "beta" or build.include? "latest"
-    version '1.9.0'
-    url 'https://d1h4xl4cr1h0mo.cloudfront.net/v1.9.0/x86_64-apple-darwin/parity'
-    sha256 "b484ba98318cd9b725e5c7a0f94d5a76c48e560c3e97e28a009ac5ef6246fcec"
+    version '1.9.1'
+    url 'https://d1h4xl4cr1h0mo.cloudfront.net/v1.9.1/x86_64-apple-darwin/parity'
+    sha256 "7804584acfeb622df89908293d45924dd089d370c4417a7dd84e5295b210d4f5"
   elsif build.include? "stable"
-    version '1.8.7'
-    url 'https://d1h4xl4cr1h0mo.cloudfront.net/v1.8.7/x86_64-apple-darwin/parity'
-    sha256 "e6f420aad9351d60cebe32e784862cd5942ac8f3d88ca45b99424f31d43f7b19"
+    version '1.8.9'
+    url 'https://d1h4xl4cr1h0mo.cloudfront.net/v1.8.8/x86_64-apple-darwin/parity'
+    sha256 "2c8750d95f16b482fe669a30333b10a1c0dcce416b42c43c97d5f42975f3c915"
   else
-    version '1.9.0'
-    url 'https://d1h4xl4cr1h0mo.cloudfront.net/v1.9.0/x86_64-apple-darwin/parity'
-    sha256 "b484ba98318cd9b725e5c7a0f94d5a76c48e560c3e97e28a009ac5ef6246fcec"
+    version '1.9.1'
+    url 'https://d1h4xl4cr1h0mo.cloudfront.net/v1.9.1/x86_64-apple-darwin/parity'
+    sha256 "7804584acfeb622df89908293d45924dd089d370c4417a7dd84e5295b210d4f5"
   end
 
   option 'master', 'Install nightly version.'
