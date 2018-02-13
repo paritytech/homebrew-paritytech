@@ -1,50 +1,39 @@
-# homebrew-paritytech
-Homebrew Tap for paritytech.
+# Homebrew Tap for Parity
 
-### Getting Homebrew
-
-Homebrew is the missing package manager for OSX. You can find installation instructions at www.brew.sh. Alternatively open your terminal and type in:
-
-```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
+Homebrew is the missing package manager for OSX. You can find installation instructions at www.brew.sh. 
 
 ### Adding Parity to your list of Homebrew 'kegs'
 
 Open your terminal and enter:
 
-```
+```bash
 brew tap paritytech/paritytech
 ```
 
 ### Installing Parity
 
-If you wish to download and install the latest **stable** version of Parity, open your terminal and enter:
-
-```
-brew install parity --stable
-```
-
-If you would prefer to use the latest **beta** release, open your terminal and enter:
+Simply install parity:
 
 ```
 brew install parity
 ```
 
-If you would prefer to use the latest **develop** release, open your terminal and enter:
+This will install the latest feature-rich **beta** release. 
+
+If you require to install **stable** version of Parity for any reason, just open your terminal and enter:
 
 ```
-brew install parity --master
+brew install parity --stable
+```
+
+The latest **nightly** develop releases are available via:
+
+```
+brew install parity --nightly
 ```
 
 In order to update Parity to the latest version use:
 
 ```
-brew update && brew upgrade parity
-```
-
-and
-
-```
-brew reinstall parity
+brew upgrade parity
 ```
