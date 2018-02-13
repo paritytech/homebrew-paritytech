@@ -37,3 +37,13 @@ In order to update Parity to the latest version use:
 ```
 brew upgrade parity
 ```
+
+### Installing additional tools
+
+Additional binaries are available via:
+
+```bash
+brew install ethabi
+brew install ethkey
+brew install ethstore
+```
