@@ -6,19 +6,19 @@ class Parity < Formula
   if build.include? "master" or build.include? "nightly"
     version '1.10.0'
     url 'https://d1h4xl4cr1h0mo.cloudfront.net/nightly/x86_64-apple-darwin/parity'
-  elsif build.include? "stable"
-    version '1.8.11'
-    url 'https://d1h4xl4cr1h0mo.cloudfront.net/v1.8.11/x86_64-apple-darwin/parity'
-    sha256 "e52e16b11f25cc8900349df04b0ce9b22bb85372029e67608153ae5ea9e02af4"
-  else
+  elsif build.include? "beta" or build.include? "latest"
     version '1.9.3'
     url 'https://d1h4xl4cr1h0mo.cloudfront.net/v1.9.3/x86_64-apple-darwin/parity'
     sha256 "884082db50cdc8e763a003e1b05ea19ebfb0ef954243efe914e2a7e366033439"
+  else
+    version '1.8.11'
+    url 'https://d1h4xl4cr1h0mo.cloudfront.net/v1.8.11/x86_64-apple-darwin/parity'
+    sha256 "e52e16b11f25cc8900349df04b0ce9b22bb85372029e67608153ae5ea9e02af4"
   end
 
   option 'nightly', 'Install nightly version.'
-  option 'beta', 'Install latest beta (default).'
-  option 'stable', 'Install latest stable'
+  option 'beta', 'Install latest beta.'
+  option 'stable', 'Install latest stable (default).'
 
   bottle :unneeded
 
