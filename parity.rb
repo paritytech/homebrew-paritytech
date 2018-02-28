@@ -6,10 +6,6 @@ class Parity < Formula
   if build.include? "master" or build.include? "nightly"
     version '1.10.0'
     url 'https://d1h4xl4cr1h0mo.cloudfront.net/nightly/x86_64-apple-darwin/parity'
-  elsif build.include? "beta" or build.include? "latest"
-    version '1.9.3'
-    url 'https://d1h4xl4cr1h0mo.cloudfront.net/v1.9.3/x86_64-apple-darwin/parity'
-    sha256 "884082db50cdc8e763a003e1b05ea19ebfb0ef954243efe914e2a7e366033439"
   elsif build.include? "stable"
     version '1.8.10'
     url 'https://d1h4xl4cr1h0mo.cloudfront.net/v1.8.10/x86_64-apple-darwin/parity'
@@ -20,11 +16,9 @@ class Parity < Formula
     sha256 "884082db50cdc8e763a003e1b05ea19ebfb0ef954243efe914e2a7e366033439"
   end
 
-  option 'master', 'Install nightly version.'
-  option 'beta', 'Install latest beta (default). '
+  option 'nightly', 'Install nightly version.'
+  option 'beta', 'Install latest beta (default).'
   option 'stable', 'Install latest stable'
-
-  option 'geth-compatible', 'Run service with --geth option.'
 
   bottle :unneeded
 
@@ -49,11 +43,6 @@ class Parity < Formula
         <true/>
         <key>ThrottleInterval</key>
         <integer>300</integer>
-        <key>ProgramArguments</key>
-        <array>
-          <string>#{prefix}/bin/parity</string>
-          #{'<string>--geth</string>' if build.include? 'geth-compatible'}
-        </array>
         <key>WorkingDirectory</key>
         <string>#{HOMEBREW_PREFIX}</string>
       </dict>
