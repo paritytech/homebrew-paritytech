@@ -7,9 +7,9 @@ class Parity < Formula
     version '1.10.0'
     url 'https://d1h4xl4cr1h0mo.cloudfront.net/nightly/x86_64-apple-darwin/parity'
   elsif build.include? "stable"
-    version '1.8.10'
-    url 'https://d1h4xl4cr1h0mo.cloudfront.net/v1.8.10/x86_64-apple-darwin/parity'
-    sha256 "7dfb3d9f7f814e5e6438c9573a6e7d799f7cf38ce2d857a4ad51e0b730fbf856"
+    version '1.8.11'
+    url 'https://d1h4xl4cr1h0mo.cloudfront.net/v1.8.11/x86_64-apple-darwin/parity'
+    sha256 "e52e16b11f25cc8900349df04b0ce9b22bb85372029e67608153ae5ea9e02af4"
   else
     version '1.9.3'
     url 'https://d1h4xl4cr1h0mo.cloudfront.net/v1.9.3/x86_64-apple-darwin/parity'
