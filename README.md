@@ -15,7 +15,7 @@ brew tap paritytech/paritytech
 Simply install parity:
 
 ```
-brew install parity
+brew install parity --latest
 ```
 
 This will install the latest feature-rich **beta** release. 
@@ -32,7 +32,7 @@ The latest **nightly** develop releases are available via:
 brew install parity --nightly
 ```
 
-In order to update Parity to the latest version use:
+In order to update Parity to the latest stable version use:
 
 ```
 brew upgrade parity
