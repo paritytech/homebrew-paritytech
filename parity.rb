@@ -30,6 +30,8 @@ class Parity < Formula
     system "#{bin}/delta", "--version"
   end
 
+  plist_options :manual => "parity"
+
   def plist; <<~EOS
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -43,6 +45,10 @@ class Parity < Formula
         <true/>
         <key>ThrottleInterval</key>
         <integer>300</integer>
+        <key>ProgramArguments</key>
+        <array>
+          <string>#{prefix}/bin/parity</string>
+        </array>
         <key>WorkingDirectory</key>
         <string>#{HOMEBREW_PREFIX}</string>
       </dict>
