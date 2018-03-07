@@ -22,7 +22,7 @@ class Parity < Formula
   end
 
   test do
-    system "#{bin}/delta", "--version"
+    system "#{bin}/parity", "--version"
   end
 
   plist_options :manual => "parity"
