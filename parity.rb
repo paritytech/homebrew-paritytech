@@ -17,8 +17,6 @@ class Parity < Formula
     url 'https://d1h4xl4cr1h0mo.cloudfront.net/nightly/x86_64-apple-darwin/parity'
   end
 
-  bottle :unneeded
-
   def install
     bin.install "parity"
   end
