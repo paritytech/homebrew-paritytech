@@ -1,8 +1,8 @@
 # Homebrew Tap for Parity
 
-Homebrew is the missing package manager for OSX. You can find installation instructions at www.brew.sh. 
+Homebrew is the missing package manager for macOS. You can find installation instructions at [brew.sh](https://brew.sh/).
 
-### Adding Parity to your list of Homebrew 'kegs'
+### Adding Parity to your list of Homebrew taps
 
 Open your terminal and enter:
 
@@ -12,27 +12,25 @@ brew tap paritytech/paritytech
 
 ### Installing Parity
 
-Simply install parity:
+We recommend using the latest feature-rich **beta** release, to install it use:
 
 ```
-brew install parity --latest
+brew install parity --devel
 ```
 
-This will install the latest feature-rich **beta** release. 
-
-If you require to install **stable** version of Parity for any reason, just open your terminal and enter:
+If you need to use the **stable** version install it with:
 
 ```
-brew install parity --stable
+brew install parity
 ```
 
-The latest **nightly** develop releases are available via:
+The latest **nightly** development releases are available via:
 
 ```
-brew install parity --nightly
+brew install parity --HEAD
 ```
 
-In order to update Parity to the latest stable version use:
+In order to update parity to the latest version of the track you're using:
 
 ```
 brew upgrade parity
