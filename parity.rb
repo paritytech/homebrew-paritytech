@@ -2,9 +2,9 @@ require 'formula'
 
 class Parity < Formula
   homepage 'https://github.com/paritytech/parity'
-  version '1.11.8'
-  url 'https://releases.parity.io/v1.11.8/x86_64-apple-darwin/parity'
-  sha256 '1c67804429a5c306a4ed02250e78fb57cc14747fb01cdf679c3e4edbf5683be3'
+  version '1.11.10'
+  url 'https://releases.parity.io/v1.11.10/x86_64-apple-darwin/parity'
+  sha256 '08bc9448653272b018605bd9995f4349d128e0b9243d7d567ff0c41f59366273'
 
   devel do
     version '2.0.1'
