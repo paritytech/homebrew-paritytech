@@ -7,9 +7,9 @@ class Parity < Formula
   sha256 '08bc9448653272b018605bd9995f4349d128e0b9243d7d567ff0c41f59366273'
 
   devel do
-    version '2.0.1'
-    url 'https://releases.parity.io/v2.0.1/x86_64-apple-darwin/parity'
-    sha256 'fa789a4fa43200eb648f34b645ef5cbd8559db8eba3909efff851b33238b15c6'
+    version '2.0.3'
+    url 'https://releases.parity.io/v2.0.3/x86_64-apple-darwin/parity'
+    sha256 'dad7d21413daf4a8aade714af3f34e39e8998bfb7fdfda594966fadb25366720'
   end
 
   head do
