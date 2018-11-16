@@ -4,12 +4,12 @@ class Parity < Formula
   homepage 'https://github.com/paritytech/parity'
   version '2.1.6'
   url 'https://releases.parity.io/v2.1.6/x86_64-apple-darwin/parity'
-  sha256 '41b87ac7a277b6025447e5dcc54193c6c46ffeb9798dbf142f3b026773a25d40'
+  sha256 'd3f6ed4261f283a1c774b5595cf492377c659c3a749ec0abb3d370acc9da0cd1'
 
   devel do
     version '2.2.1'
-    url 'https://releases.parity.io/v2.1.6/x86_64-apple-darwin/parity'
-    sha256 '0a7f77f3123524d4522f57b1e7387c5ae9e74c5f0971f84760021d8ad2b138b4'
+    url 'https://releases.parity.io/v2.2.1/x86_64-apple-darwin/parity'
+    sha256 'adc27b6f7ea7d66eb012a5c2a6036e304f09ebcf2f27b04d93731618c630d840'
   end
 
   head do
