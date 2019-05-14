@@ -2,14 +2,14 @@ require 'formula'
 
 class Parity < Formula
   homepage 'https://github.com/paritytech/parity'
-  version '2.4.5'
-  url 'https://releases.parity.io/ethereum/v2.4.5/x86_64-apple-darwin/parity'
-  sha256 '9449237292d3dd3cbe634c289670467d2b8dbdc2e3f4eeb1f11141399ab1763a'
+  version '2.4.6'
+  url 'https://releases.parity.io/ethereum/v2.4.6/x86_64-apple-darwin/parity'
+  sha256 'ddb8259333e7ebb87b483305449987d6d6d03689d244ae04e1b853eceeb50f49'
 
   devel do
-    version '2.5.0'
-    url 'https://releases.parity.io/ethereum/v2.5.0/x86_64-apple-darwin/parity'
-    sha256 '86c0db1952bafeafa832cf84010928902bfbff90e29c0f301cf5c6dd76630531'
+    version '2.5.1'
+    url 'https://releases.parity.io/ethereum/v2.5.1/x86_64-apple-darwin/parity'
+    sha256 '17c7e7622585e0561bd810e9fb5dc2348909033545b7c1008476ef45817f059e'
   end
 
   head do
