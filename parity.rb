@@ -3,13 +3,13 @@ require 'formula'
 class Parity < Formula
   homepage 'https://github.com/paritytech/parity'
   version '2.5.5'
-  url 'https://releases.parity.io/ethereum/v2.4.8/x86_64-apple-darwin/parity'
-  sha256 '69f1ccf4231d66949e57e5713e2adf405d29a3b42561a6c1251846f3fced03d6'
+  url 'https://releases.parity.io/ethereum/v2.5.5/x86_64-apple-darwin/parity'
+  sha256 '9c1934728da62b0246af5cc189fe760b77e60b6811da0dbb536d1958d92153ad'
 
   devel do
     version '2.6.0'
-    url 'https://releases.parity.io/ethereum/v2.5.3/x86_64-apple-darwin/parity'
-    sha256 '136284a143ec6665f7c9ebb7d81a913120e7ec1177b0c1b29d1d2c458df42e17'
+    url 'https://releases.parity.io/ethereum/v2.6.0/x86_64-apple-darwin/parity'
+    sha256 '30b48765fa3d811e17552cc90e400690b7c88907f9b5f172b285b322100e452c'
   end
 
   head do
