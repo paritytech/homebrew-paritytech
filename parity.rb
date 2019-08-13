@@ -2,9 +2,9 @@ require 'formula'
 
 class Parity < Formula
   homepage 'https://github.com/paritytech/parity'
-  version '2.5.5'
-  url 'https://releases.parity.io/ethereum/v2.5.5/x86_64-apple-darwin/parity'
-  sha256 '9c1934728da62b0246af5cc189fe760b77e60b6811da0dbb536d1958d92153ad'
+  version '2.5.6'
+  url 'https://releases.parity.io/ethereum/v2.5.6/x86_64-apple-darwin/parity'
+  sha256 '81352b111872304466868c9193a881fccc76864dbf571b18e7bebf4d8cdbaadc'
 
   devel do
     version '2.6.0'
